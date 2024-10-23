@@ -1,0 +1,16 @@
+{
+  "name": "shared-reading-tool",
+  "version": "1.0.0",
+  "description": "A tool for shared reading and synchronization of PDFs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "ws": "^7.4.6"
+  },
+  "author": "",
+  "license": "ISC"
+}
+

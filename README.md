@@ -4,14 +4,14 @@ Online version of the shared tool deployed on Glitch node server. updated design
 # Shared Reading Tool
 
 ## Overview
-The Shared Reading Tool is a web application designed to facilitate synchronized reading sessions. It allows users to upload a PDF, navigate through its pages, and share notes in real-time. The tool is optimized for both desktop and mobile devices, ensuring a seamless experience across different platforms.
+The Shared Reading Tool is a web application designed to facilitate synchronized reading sessions between two readers. It allows users to upload a PDF, navigate through its pages, and share notes together in real-time . The tool is optimized for both desktop and mobile devices, ensuring a seamless experience across different platforms.
 
 ## Features
-- **PDF Upload and Viewing**: Users can upload a PDF file and view it directly within the application.
-- **Page Navigation**: Users can navigate through the PDF pages using next and previous buttons.
+- **PDF Upload and Viewing**: Users can upload a PDF file and view it directly within the application.(both users should have the same pdf to sync between pages).
+- **Page Navigation**: Users can navigate through the PDF pages using next and previous buttons or arrow buttons on keyboard.
 - **Progress Bar**: A visual progress bar shows the user's current position in the PDF.
-- **Notes Section**: A dedicated section for users to take and share notes.
-- **Zoom Controls (Mobile Only)**: Users on mobile devices can zoom in and out of the PDF for better readability.
+- **Notes Section**: A dedicated section for users to take and share notes also serves as a chat box to communicate
+- **Zoom Controls (Mobile Only)**: Users on mobile devices can zoom in and out of the PDF for better readability, recommended viewing through desktop mode for the best view though.
 - **Real-Time Sync**: Page turns and notes are synchronized in real-time between users.
 - **WebSocket Integration**: Ensures seamless real-time communication for synchronization.
 
@@ -29,7 +29,8 @@ The Shared Reading Tool was created using HTML, CSS, and JavaScript. It utilizes
    ```sh
    git clone https://github.com/your-username/your-repository.git
    cd your-repository
-2.Install dependencies (if using a backend server):
+2.**Install dependencies (if using a backend server):** 
+
 npm install
 
 3.Run the application:
@@ -38,7 +39,7 @@ npm start
 4.Open the application in your browser:
 http://localhost:3000
 
-Usage
+## Usage
 Upload a PDF: Click the file input to select and upload your PDF.
 
 Navigate Pages: Use the "Previous Page" and "Next Page" buttons to navigate through the PDF.
@@ -49,10 +50,10 @@ Take Notes: Use the notes section to write and share notes with others.
 
 Sync: Changes are synchronized in real-time across connected users.
 
-Contributing
+## Contributing
 Feel free to contribute by opening issues and submitting pull requests. Contributions are welcome!
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Made by Maalik
